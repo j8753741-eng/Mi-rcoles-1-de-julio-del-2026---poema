@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Miércoles 1 de Julio del 2026 | Eres la noche más hermosa</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#2a2952 0%,#17162e 30%,#090913 65%,#030307 100%);
+
+overflow-x:hidden;
+font-family:'Cormorant Garamond',serif;
+color:#fff;
+min-height:100vh;
+position:relative;
+
+}
+
+/* Fondo brillante */
+
+body::before{
+
+content:"";
+position:fixed;
+inset:0;
+
+background:
+radial-gradient(circle at 20% 25%,rgba(255,220,170,.12),transparent 40%),
+radial-gradient(circle at 80% 20%,rgba(255,255,255,.08),transparent 35%),
+radial-gradient(circle at 50% 100%,rgba(255,190,210,.10),transparent 50%);
+
+animation:fondo 15s ease-in-out infinite alternate;
+
+z-index:-5;
+
+}
+
+@keyframes fondo{
+
+0%{
+transform:scale(1);
+}
+
+100%{
+transform:scale(1.12);
+}
+
+}
+
+/* Neblina */
+
+.mist{
+
+position:fixed;
+width:180%;
+height:180%;
+left:-40%;
+top:-40%;
+
+background:
+radial-gradient(circle,
+rgba(255,255,255,.05),
+transparent 70%);
+
+filter:blur(90px);
+
+animation:mist 35s linear infinite;
+
+z-index:-4;
+
+}
+
+@keyframes mist{
+
+from{
+transform:translateX(-8%);
+}
+
+to{
+transform:translateX(8%);
+}
+
+}
+
+/* Estrellas */
+
+.stars{
+
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+pointer-events:none;
+z-index:-3;
+
+}
+
+.star{
+
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+opacity:.9;
+
+animation:twinkle linear infinite;
+
+box-shadow:
+0 0 8px white,
+0 0 15px rgba(255,255,255,.8);
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.2;
+transform:scale(.5);
+}
+
+50%{
+opacity:1;
+transform:scale(1.7);
+}
+
+}
+
+/* Luna */
+
+.moon{
+
+position:fixed;
+top:70px;
+right:90px;
+
+width:150px;
+height:150px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle at 35% 35%,
+#fffef9,
+#fff2d5 50%,
+#edd7b1 75%,
+#d4bb8c);
+
+box-shadow:
+0 0 40px rgba(255,245,210,.8),
+0 0 100px rgba(255,230,180,.35);
+
+animation:moonFloat 7s ease-in-out infinite;
+
+z-index:-2;
+
+}
+
+@keyframes moonFloat{
+
+0%,100%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+}
+
+/* Halo */
+
+.moon::after{
+
+content:"";
+
+position:absolute;
+left:50%;
+top:50%;
+
+transform:translate(-50%,-50%);
+
+width:220px;
+height:220px;
+
+border-radius:50%;
+
+background:
+radial-gradient(circle,
+rgba(255,248,225,.20),
+transparent 70%);
+
+animation:halo 5s infinite;
+
+}
+
+@keyframes halo{
+
+0%,100%{
+opacity:.4;
+transform:translate(-50%,-50%) scale(1);
+}
+
+50%{
+opacity:.8;
+transform:translate(-50%,-50%) scale(1.15);
+}
+
+}
+
+/* Pétalos */
+
+.petals{
+
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:-1;
+
+}
+
+.petal{
+
+position:absolute;
+top:-40px;
+
+font-size:18px;
+
+animation:fall linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:
+translateY(-40px)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:.9;
+
+}
+
+100%{
+
+transform:
+translateY(115vh)
+translateX(80px)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Contenedor */
+
+.wrapper{
+
+width:min(950px,92%);
+margin:auto;
+
+padding-top:90px;
+padding-bottom:90px;
+
+}
+
+/* Tarjeta */
+
+.poem{
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:35px;
+
+padding:70px 60px;
+
+box-shadow:
+
+0 0 40px rgba(255,220,180,.12),
+0 0 80px rgba(255,180,200,.08);
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Brillos */
+
+.poem::before{
+
+content:"";
+
+position:absolute;
+
+top:-120px;
+left:-120px;
+
+width:260px;
+height:260px;
+
+background:
+radial-gradient(circle,
+rgba(255,245,215,.25),
+transparent 70%);
+
+animation:shine 7s infinite;
+
+}
+
+.poem::after{
+
+content:"";
+
+position:absolute;
+
+right:-120px;
+bottom:-120px;
+
+width:260px;
+height:260px;
+
+background:
+radial-gradient(circle,
+rgba(255,190,220,.18),
+transparent 70%);
+
+animation:shine2 9s infinite;
+
+}
+
+@keyframes shine{
+
+50%{
+transform:translate(40px,30px);
+}
+
+}
+
+@keyframes shine2{
+
+50%{
+transform:translate(-45px,-30px);
+}
+
+}
+
+/* Encabezado */
+
+.header{
+
+text-align:center;
+margin-bottom:55px;
+
+}
+
+.header .mini{
+
+font-family:'Cinzel',serif;
+
+letter-spacing:5px;
+
+font-size:13px;
+
+color:#f7dca5;
+
+text-transform:uppercase;
+
+}
+
+.header h1{
+
+margin-top:18px;
+
+font-family:'Great Vibes',cursive;
+
+font-size:68px;
+
+font-weight:400;
+
+color:#fff8ef;
+
+line-height:1.15;
+
+text-shadow:
+
+0 0 20px rgba(255,235,190,.45);
+
+}
+
+.date{
+
+margin-top:20px;
+
+font-size:24px;
+
+font-style:italic;
+
+color:#f4dcb4;
+
+}
+
+.divider{
+
+margin:35px auto;
+
+width:240px;
+height:2px;
+
+background:
+linear-gradient(to right,
+transparent,
+#f4d7a1,
+white,
+#f4d7a1,
+transparent);
+
+position:relative;
+
+}
+
+.divider::before{
+
+content:"❦";
+
+position:absolute;
+
+left:50%;
+top:50%;
+
+transform:translate(-50%,-58%);
+
+background:rgba(16,16,30,.9);
+
+padding:0 16px;
+
+font-size:24px;
+
+color:#ffe6b7;
+
+}
+
+.content{
+
+font-size:33px;
+
+line-height:2.1;
+
+color:#fffdf9;
+
+text-align:center;
+
+}
+
+.content p{
+
+margin-bottom:28px;
+opacity:0;
+
+transform:translateY(35px);
+
+animation:fadeUp 1.2s forwards;
+
+}
+
+.content p:nth-child(1){animation-delay:.3s;}
+.content p:nth-child(2){animation-delay:.6s;}
+.content p:nth-child(3){animation-delay:.9s;}
+.content p:nth-child(4){animation-delay:1.2s;}
+.content p:nth-child(5){animation-delay:1.5s;}
+.content p:nth-child(6){animation-delay:1.8s;}
+
+@keyframes fadeUp{
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.first{
+
+font-family:'Great Vibes',cursive;
+
+font-size:54px;
+
+color:#ffe7bb;
+
+text-shadow:0 0 15px rgba(255,225,170,.35);
+
+}
+
+/* Capitular */
+
+.content p:first-of-type::first-letter{
+
+font-size:88px;
+
+font-family:'Great Vibes',cursive;
+
+color:#ffe6b0;
+
+float:left;
+
+line-height:.8;
+
+padding-right:10px;
+
+text-shadow:0 0 18px rgba(255,230,170,.5);
+
+}
+
+/* Separador elegante */
+
+.separator{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:18px;
+
+margin:45px 0;
+
+color:#f6ddb0;
+
+font-size:22px;
+
+opacity:.9;
+
+}
+
+.separator::before,
+.separator::after{
+
+content:"";
+
+width:110px;
+height:1px;
+
+background:linear-gradient(to right,
+transparent,
+#f7deb2,
+transparent);
+
+}
+
+/* Firma */
+
+.signature{
+
+margin-top:70px;
+
+text-align:center;
+
+}
+
+.signature .love{
+
+font-family:'Great Vibes',cursive;
+
+font-size:62px;
+
+color:#ffe4b2;
+
+text-shadow:0 0 18px rgba(255,225,170,.4);
+
+}
+
+.signature .heart{
+
+font-size:28px;
+
+margin-top:10px;
+
+animation:heartbeat 2s infinite;
+
+}
+
+@keyframes heartbeat{
+
+0%,100%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.25);
+}
+
+}
+
+@media(max-width:768px){
+
+.header h1{
+font-size:50px;
+}
+
+.content{
+font-size:28px;
+line-height:2;
+}
+
+.poem{
+padding:45px 28px;
+}
+
+.first{
+font-size:46px;
+}
+
+.content p:first-of-type::first-letter{
+font-size:70px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="mist"></div>
+
+<div class="stars" id="stars"></div>
+
+<div class="moon"></div>
+
+<div class="petals" id="petals"></div>
+
+<div class="wrapper">
+
+<div class="poem">
+
+<div class="header">
+
+<div class="mini">
+Un poema nacido desde el alma
+</div>
+
+<h1>
+ERES LA NOCHE MÁS HERMOSA<br>
+QUE MI CORAZÓN HA TENIDO<br>
+EL PRIVILEGIO DE ABRAZAR
+</h1>
+
+<div class="date">
+Miércoles, 1 de julio de 2026 — Noche
+</div>
+
+<div class="divider"></div>
+
+</div>
+
+<div class="content">
+
+<p class="first">
+Mi princesa hermosa...
+</p>
+
+<p>
+Esta noche el universo parece haberse detenido solamente para contemplar la inmensidad de lo que siento por ti.
+</p>
+
+<p>
+La luna se asoma entre las nubes como si quisiera descubrir el secreto de mi sonrisa, y las estrellas brillan con tanta fuerza porque, incluso ellas, saben que desde que llegaste a mi vida existe un amor que supera cualquier belleza que hayan visto desde el principio de los tiempos.
+</p>
+
+<p>
+Y ese amor... eres tú.
+</p>
+
+<p>
+Eres el milagro que apareció cuando menos lo esperaba.
+</p>
+
+<p>
+La calma que abrazó mis días.
+</p>
+
+<p>
+La mujer que convirtió lo cotidiano en extraordinario.
+</p>
+
+<p>
+La dueña de cada uno de mis "te amo", de mis sueños, de mis esperanzas y del lugar más importante que existe dentro de mí: mi corazón.
+</p>
+
+<div class="separator">✦</div>
+
+<p>
+No existe rincón de mi alma donde no estés presente.
+</p>
+
+<p>
+Estás en cada pensamiento que nace al despertar.
+</p>
+
+<p>
+En cada sonrisa que se escapa sin darme cuenta.
+</p>
+
+<p>
+En cada suspiro que lleva tu nombre.
+</p>
+
+<p>
+En cada plan que imagino para el futuro.
+</p>
+
+<p>
+Porque desde que te conocí dejé de pensar únicamente en mi vida y empecé a imaginar una vida donde tú estuvieras conmigo para siempre.
+</p>
+
+<div class="separator">❦</div>
+
+<p>
+Esta noche quiero que sepas que amarte no es solamente un sentimiento.
+</p>
+
+<p>
+Es una decisión que volvería a tomar una y mil veces.
+</p>
+
+<p>
+Es la promesa silenciosa que hace mi corazón cada vez que late.
+</p>
+
+<p>
+Es el refugio donde siempre quiero regresar.
+</p>
+
+<p>
+Si pudiera recorrer cada estrella del cielo solamente para regalarte una, lo haría.
+</p>
+
+<p>
+Si pudiera detener el tiempo para quedarme abrazándote eternamente, también lo haría.
+</p>
+
+<p>
+Y si tuviera que cruzar todos los océanos del mundo únicamente para tomar tu mano una vez más, caminaría sin cansancio hasta encontrarte.
+</p>
+
+<p>
+Porque cuando se trata de ti, ninguna distancia parece imposible.
+</p>
+
+<p>
+Ningún obstáculo parece demasiado grande.
+</p>
+
+<p>
+Ningún esfuerzo parece suficiente para demostrarte cuánto significas para mí.
+</p>
+
+<p>
+Eres la mujer que volvió hermoso mi destino.
+</p>
+
+<p>
+La razón por la que ahora los amaneceres tienen más color.
+</p>
+
+<p>
+La explicación de por qué mi corazón sonríe incluso en los días difíciles.
+</p>
+
+<p>
+La respuesta que jamás supe que estaba buscando.
+</p>
+
+<div class="separator">🌙</div>
+
+<p>
+Y cuando pienso en ti...
+</p>
+
+<p>
+No imagino solamente el presente.
+</p>
+
+<p>
+Imagino cientos de noches como esta.
+</p>
+
+<p>
+Imagino despertar contigo.
+</p>
+
+<p>
+Tomar tu mano cuando el mundo parezca complicado.
+</p>
+
+<p>
+Reír por cualquier tontería.
+</p>
+
+<p>
+Abrazarte sin necesidad de decir una sola palabra.
+</p>
+
+<p>
+Besarte hasta que el tiempo olvide seguir avanzando.
+</p>
+
+<p>
+Construir recuerdos que un día se conviertan en nuestra historia favorita.
+</p>
+
+<div class="separator">❦</div>
+
+<p>
+Porque contigo entendí que el verdadero amor no necesita ser perfecto.
+</p>
+
+<p>
+Solo necesita ser sincero.
+</p>
+
+<p>
+Y el mío es tan sincero que ni todas las palabras del universo alcanzarían para describirlo completamente.
+</p>
+
+<p>
+Mi amor por ti no conoce límites.
+</p>
+
+<p>
+No entiende de finales.
+</p>
+
+<p>
+No se cansa.
+</p>
+
+<p>
+No disminuye.
+</p>
+
+<p>
+Cada día encuentra una nueva manera de crecer.
+</p>
+
+<p>
+Cada noche descubre un motivo más para enamorarse de ti.
+</p>
+
+<div class="separator">✨</div>
+
+<p>
+Y esta noche...
+</p>
+
+<p>
+Mientras el silencio cubre el mundo y las estrellas decoran el cielo, quiero hacer una promesa que nace desde lo más profundo de mi alma.
+</p>
+
+<p>
+Prometo seguir enamorándote con pequeños detalles.
+</p>
+
+<p>
+Prometo escuchar tu corazón incluso cuando no pronuncies una sola palabra.
+</p>
+
+<p>
+Prometo cuidar tus sonrisas como el tesoro más valioso que existe.
+</p>
+
+<p>
+Prometo abrazarte en tus días felices y sostenerte aún más fuerte en los difíciles.
+</p>
+
+<p>
+Prometo recordarte siempre lo hermosa, valiosa e increíble que eres.
+</p>
+
+<p>
+Porque una mujer como tú merece un amor inmenso.
+</p>
+
+<p>
+Un amor paciente.
+</p>
+
+<p>
+Un amor que permanezca.
+</p>
+
+<p>
+Un amor que nunca deje de elegirte.
+</p>
+
+<p>
+Y ese amor quiero que sea el mío.
+</p>
+
+<p>
+Quiero seguir escribiendo nuestra historia.
+</p>
+
+<p>
+Quiero seguir descubriendo nuevas razones para decirte "te amo".
+</p>
+
+<p>
+Quiero seguir viendo cómo tus ojos iluminan mi mundo con solo mirarme.
+</p>
+
+<p>
+Quiero seguir siendo el lugar donde puedas sentirte segura, querida y profundamente amada.
+</p>
+
+<div class="separator">🤍</div>
+
+<p>
+Mi princesa...
+</p>
+
+<p>
+Gracias por existir.
+</p>
+
+<p>
+Gracias por aparecer en mi vida.
+</p>
+
+<p>
+Gracias por regalarme la fortuna de poder llamarte "mi amor".
+</p>
+
+<p>
+Porque si hoy alguien me preguntara cuál ha sido el regalo más hermoso que la vida me ha dado...
+</p>
+
+<p>
+Respondería tu nombre sin pensarlo ni un segundo.
+</p>
+
+<p>
+Y mientras exista una luna iluminando nuestras noches...
+</p>
+
+<p>
+Mientras exista una estrella brillando en el cielo...
+</p>
+
+<p>
+Mientras exista un solo latido dentro de mi pecho...
+</p>
+
+<p>
+Seguiré amándote con toda mi alma.
+</p>
+
+<p>
+Con toda mi vida.
+</p>
+
+<p>
+Con todos mis sueños.
+</p>
+
+<p>
+Y con un corazón que cada día descubre que enamorarse de ti fue, es y siempre será la decisión más hermosa que pudo tomar.
+</p>
+
+<p>
+Te amo con un amor tan infinito que ni el cielo de esta preciosa noche de miércoles alcanza para contener todo lo que siento por ti. ❤️🌙✨
+</p>
+
+<div class="signature">
+
+<div class="love">
+Para siempre tú y yo
+</div>
+
+<div class="heart">
+🤍🌙✨
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const stars=document.getElementById("stars");
+
+for(let i=0;i<180;i++){
+
+const s=document.createElement("span");
+
+s.className="star";
+
+s.style.left=Math.random()*100+"%";
+
+s.style.top=Math.random()*100+"%";
+
+s.style.animationDuration=(2+Math.random()*5)+"s";
+
+s.style.animationDelay=Math.random()*5+"s";
+
+stars.appendChild(s);
+
+}
+
+const petals=document.getElementById("petals");
+
+const flowers=["🌸","🤍","✨","❀"];
+
+for(let i=0;i<40;i++){
+
+const p=document.createElement("span");
+
+p.className="petal";
+
+p.innerHTML=flowers[Math.floor(Math.random()*flowers.length)];
+
+p.style.left=Math.random()*100+"%";
+
+p.style.animationDuration=(12+Math.random()*12)+"s";
+
+p.style.animationDelay=Math.random()*20+"s";
+
+p.style.fontSize=(16+Math.random()*14)+"px";
+
+petals.appendChild(p);
+
+}
+
+</script>
+
+</body>
+
+  </html>
